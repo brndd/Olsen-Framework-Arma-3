@@ -15,11 +15,11 @@ class Weather {
 };
 
 class ace_weather_windSimulation {
-    title = "ACE Dynamic Wind (overrides parametrized wind)";
+    title = "ACE Wind Simulation (overrides parametrized wind)";
     ACE_setting = 1;
     values[] = {1, 0};
-    texts[] = {"Enabled", "Disabled"};
-    default = 1;
+    texts[] = {"Mission/Server Default", "Enabled", "Disabled"};
+    default = -1;
 };
 
 class Wind {
