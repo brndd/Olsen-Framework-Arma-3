@@ -64,26 +64,39 @@ if (isMultiplayer) then {
 
 	};
 
-	_WindParam = "Wind" call BIS_fnc_getParamValue;
+	// _WindParam = "Wind" call BIS_fnc_getParamValue;
 
-	if (_WindParam != -1) then {
+	// if (_WindParam != -1) then {
 		
-		_wind = _WindParam;
-		if (_wind == -10) then {
-			_wind = random 10;
-		};
-		0 setWindStr (_wind / 10);
+		// _wind = _WindParam;
+		// if (_wind == -10) then {
+			// _wind = random 10;
+		// };
+		// 0 setWindStr (_wind / 10);
 
-		if ((_wind / 10) * 1.25 > 1) then {
+		// if ((_wind / 10) * 1.25 > 1) then {
 
-			0 setGusts 1;
+			// 0 setGusts 1;
 
-		} else {
+		// } else {
 
-			0 setGusts ((_wind / 10) * 1.25);
+			// 0 setGusts ((_wind / 10) * 1.25);
 
-		};
-	};
+		// };
+	// };
+    
+    _wind = "Wind" call BIS_fnc_getParamValue;
+    _windDir = "WindDir" call BIS_fnc_getParamValue;
+    if (_wind != -1) then {
+        //calculate X and Y component of wind direction vector
+        //convert to CCW from X-axis, inverted (so the wind blows *from* that dir)
+        _windDir = 90 + (180 - _windDir);
+        _dirX = cos _windDir;
+        _dirY = sin _windDir;
+        
+        0 setWindStr 1;
+        setWind [_dirX * _wind, _dirY * _wind, true];
+    };
 
 	_FogParam = "Fog" call BIS_fnc_getParamValue;
 
