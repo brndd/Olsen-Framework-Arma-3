@@ -63,27 +63,6 @@ if (isMultiplayer) then {
 		0 setOvercast (_overcast / 10);
 
 	};
-
-	// _WindParam = "Wind" call BIS_fnc_getParamValue;
-
-	// if (_WindParam != -1) then {
-		
-		// _wind = _WindParam;
-		// if (_wind == -10) then {
-			// _wind = random 10;
-		// };
-		// 0 setWindStr (_wind / 10);
-
-		// if ((_wind / 10) * 1.25 > 1) then {
-
-			// 0 setGusts 1;
-
-		// } else {
-
-			// 0 setGusts ((_wind / 10) * 1.25);
-
-		// };
-	// };
     
     _wind = "Wind" call BIS_fnc_getParamValue;
     _windDir = "WindDir" call BIS_fnc_getParamValue;
