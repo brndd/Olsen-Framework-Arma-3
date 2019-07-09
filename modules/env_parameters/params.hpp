@@ -24,7 +24,7 @@ class ace_weather_windSimulation {
 
 class Wind {
 	title = "Wind";
-	texts[] = {"Mission default", "No Wind", "Light Breeze (2 m/s)", "Gentle Breeze (4 m/s)", "Fresh Breeze (9 m/s)", "Strong breeze (12 m/s)", "High Wind (15 m/s)", "Gale (20 m/s)", "Storm (26 m/s)", "Violent Storm (30 m/s)"};
+	texts[] = {"Mission default", "No Wind", "Light Breeze (2 m/s)", "Gentle Breeze (4 m/s)", "Fresh Breeze (9 m/s)", "Strong Breeze (12 m/s)", "High Wind (15 m/s)", "Gale (20 m/s)", "Storm (26 m/s)", "Violent Storm (30 m/s)"};
 	values[] = {-1, 0, 2, 4, 9, 12, 15, 20, 26, 30};
 	default = -1;
 };
