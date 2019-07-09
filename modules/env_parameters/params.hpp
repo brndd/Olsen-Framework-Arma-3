@@ -2,15 +2,15 @@
 
 class TimeOfDay {
 	title = "Time";
-	texts[] = {"Mission default (1637z)", "0600", "1200", "1800", "0000"};
-	values[] = {-1, 6, 12, 18, 0};
+	texts[] = {"Mission default", "0600", "1200", "1800", "0000", "Early dawn", "Dawn", "Early dusk", "Dusk", "Random"};
+	values[] = {-1, 6, 12, 18, 0, -2, -3, -4, -5, -10};
 	default = -1;
 };
 
 class Weather {
 	title = "Weather";
-	texts[] = {"Mission default (Cloudy)", "Clear", "Cloudy", "Overcast", "Rain", "Storm"};
-	values[] = {-1, 1, 3, 5, 7, 9};
+	texts[] = {"Mission default", "Clear", "Cloudy", "Overcast", "Rain", "Storm", "Random"};
+	values[] = {-1, 1, 3, 5, 7, 9, -10};
 	default = -1;
 };
 
@@ -45,7 +45,7 @@ class Fog {
 
 class TimeLimit {
 	title = "Change time limit";
-	texts[] = {"-30 Min", "-15 Min", "No change (90 Min)", "+15 Min", "+30 Min", "No time limit"};
+	texts[] = {"-30 Min", "-15 Min", "No change", "+15 Min", "+30 Min", "No time limit"};
 	values[] = {-30, -15, 0, 15, 30, -1};
 	default = 0;
 };
