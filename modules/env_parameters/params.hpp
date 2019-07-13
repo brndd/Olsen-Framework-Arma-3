@@ -15,7 +15,7 @@ class Weather {
 };
 
 class ace_weather_windSimulation {
-    title = "ACE Wind Simulation (must be disabled for parametrized wind)";
+    title = "ACE Wind Simulation (must be disabled for parameterized wind)";
     ACE_setting = 1;
     values[] = {-1, 1, 0};
     texts[] = {"Mission/Server Default", "Enabled", "Disabled"};
@@ -30,7 +30,7 @@ class Wind {
 };
 
 class WindDir {
-    title = "Wind Direction (blowing from; only affects parametrized wind)";
+    title = "Wind Direction (blowing from; only affects parameterized wind)";
     texts[] = {"North (0°)", "North-Northeast (22.5°)", "Northeast (45°)", "East-Northeast (67.5°)", "East (90°)", "East-Southeast (112.5°)", "Southeast (135°)", "South-Southeast (157.5°)", "South (180°)", "South-Southwest (202.5°)", "Southwest (225°)", "West-Southwest (247.5°)", "West (270°)", "West-Northwest (292.5°)", "Northwest (315°)", "North-Northwest (337.5°)"};
     values[] = {0, 22.5, 45, 67.5, 90, 112.5, 135, 157.5, 180, 202.5, 225, 247.5, 270, 292.5, 315, 337.5};
     default = 90;
